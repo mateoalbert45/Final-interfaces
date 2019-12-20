@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/juego.css">
+    <link rel="stylesheet" type="text/css" href="css/juego.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
+        <a class="" href="home.html"><img src="img/logo2.png" alt="" height="50px"></a>
+        <form class="mobile-search" action="busqueda.html">
+          <input class="form-control mr-sm-2 espacio mobile" type="text" placeholder="Buscar por nombre" aria-label="Search">
+        </form>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link letra-navbar item-navbar" href="peliculas.html">Peliculas <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link item-navbar" href="series.html">Series <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link item-navbar" href="lista.html">Mi lista <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0 no-mobile" action="busqueda.html">
+            <input class="form-control mr-sm-2 espacio" type="text" placeholder="Buscar por nombre" aria-label="Search">
+            <a href="perfil.html"><img class="foto_perfil espacio" src="img/foto_perfil.jpg" alt=""></a>
+            <div class="boton-navbar dropdown show">
+
+
+
+                  <i class="espacio fa fa-bell" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div class="row align-items-center contorno efecto-seleccion">
+                            <img class="  col-7 img-notificacion"  src="img/dark-notificacion.jpg" alt="" width="200px">
+                            <div class="  col-5 no-padding  ">
+                              <p class="titulo-notificacion">Dark</p>
+                              <p class="descripcion-notificacion ">Ya disponible</p>
+                              <p class="descripcion-notificacion ">Temporada 3</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center contorno efecto-seleccion">
+                            <img class="  col-7 img-notificacion"  src="img/atypical-notificacion.jpg" alt="" >
+                            <div class="  col-5 no-padding  ">
+                              <p class="titulo-notificacion">Atypical</p>
+                              <p class="descripcion-notificacion ">Ya disponible</p>
+                              <p class="descripcion-notificacion ">Nuevos Episodios</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center contorno efecto-seleccion">
+                            <img class="  col-7 img-notificacion"  src="img/ozark-notificacion.jpg" alt="" >
+                            <div class="  col-5 no-padding  ">
+                              <p class="titulo-notificacion">Ozark</p>
+                              <p class="descripcion-notificacion ">Ya disponible</p>
+                              <p class="descripcion-notificacion ">Temporada 2</p>
+                            </div>
+                        </div>
+                      </div>
+
+
+
+              </div>
+            <div class=" "><a href="login.html"<i class=" boton-navbar espacio fa fa-sign-out"></i></a></div>
+          </form>
+        </div>
+      </nav>
+
+    <div class="container">
+      <div class="row jumbotron no-padding-bottom">
+        <div class="col-md-2">
+<button type="button" name="button" class="btn btn-success btn-outline-success jumbotron descripcion-juego" id="play">Play</button>
+        </div>
+        <div class="col-md-10">
+
+
+        <div class="container">
+          <h1 class="display-6 titulo-juego">Golpea al Rey Helado 3 veces para ganar!</h1>
+          <p class="descripcion-juego">Cuidado con el conejo, tiene un cuchillo y no tiene miedo de usarlo. (Utiliza W para saltar)</p>
+          <h1 class="display-8 titulo-juego" id="puntaje">  </h1>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <div class="cielo">
+        <div class=" invisible" id="mensaje_fin">
+          <h1 class="titulo-juego">Te Adverti del conejo....</h1>
+        </div>
+        <div class="piso" id="piso">
+      </div>
+    </div>
+    <div id="personaje" class="">
+    </div>
+    <div class="" id="obstaculo">
+    </div>
+    <div class="" id="enemigo">
+    </div>
+
+
+  </body>
+  <script src="js/juego.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js" charset="utf-8"></script>
+</html>

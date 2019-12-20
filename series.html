@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Series - Netflics</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" href="css/wizard.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
+          <a class="" href="home.html"><img src="img/logo2.png" alt="" height="50px"></a>
+
+          <form class="mobile-search" action="busqueda.html">
+            <input class="form-control mr-sm-2 espacio mobile" type="text" placeholder="Buscar por nombre" aria-label="Search">
+
+          </form>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link letra-navbar item-navbar" href="peliculas.html">Peliculas <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link item-navbar" href="series.html" style="color:#6C9CFF">Series <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link item-navbar" href="lista.html">Mi lista <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0 no-mobile" action="busqueda.html">
+              <input class="form-control mr-sm-2 espacio" type="text" placeholder="Buscar por nombre" aria-label="Search">
+              <a href="perfil.html"><img class="foto_perfil espacio" src="img/foto_perfil.jpg" alt=""></a>
+              <div class="boton-navbar dropdown show">
+
+
+
+                    <i class="espacio fa fa-bell" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <div class="row align-items-center contorno efecto-seleccion">
+                              <img class="  col-7 img-notificacion"  src="img/dark-notificacion.jpg" alt="" width="200px">
+                              <div class="  col-5 no-padding  ">
+                                <p class="titulo-notificacion">Dark</p>
+                                <p class="descripcion-notificacion ">Ya disponible</p>
+                                <p class="descripcion-notificacion ">Temporada 3</p>
+                              </div>
+                          </div>
+                          <div class="row align-items-center contorno efecto-seleccion">
+                              <img class="  col-7 img-notificacion"  src="img/atypical-notificacion.jpg" alt="" >
+                              <div class="  col-5 no-padding  ">
+                                <p class="titulo-notificacion">Atypical</p>
+                                <p class="descripcion-notificacion ">Ya disponible</p>
+                                <p class="descripcion-notificacion ">Nuevos Episodios</p>
+                              </div>
+                          </div>
+                          <div class="row align-items-center contorno efecto-seleccion">
+                              <img class="  col-7 img-notificacion"  src="img/ozark-notificacion.jpg" alt="" >
+                              <div class="  col-5 no-padding  ">
+                                <p class="titulo-notificacion">Ozark</p>
+                                <p class="descripcion-notificacion ">Ya disponible</p>
+                                <p class="descripcion-notificacion ">Temporada 2</p>
+                              </div>
+                          </div>
+                        </div>
+
+
+
+                </div>
+              <div class=" "><a href="login.html"<i class=" boton-navbar espacio fa fa-sign-out"></i></a></div>
+            </form>
+          </div>
+        </nav>
+</header>
+
+<main role="main ">
+  <h1 class=" titulo-carrusel centrar-titulo">Lo mas nuevo</h1>
+
+  <div class="principal">
+
+
+
+        <div class="items invisible-scrollbar margen" id="0">
+          <div class="item"><img src="img/therain.jpg" alt="" class="img-principal-mobile" height="567px" width="346px">
+            <div class="info">
+              <img class="centrar boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+              <img class="centrar2" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+            </div>
+          </div>
+          <div class="item"><img src="img/breaking_bad_poster.jpg" class="img-principal-mobile" alt="" height="567px" width="346px">
+            <div class="info">
+              <img class="centrar boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+              <img class="centrar2" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+            </div>
+          </div>
+          <div class="item"><img src="img/elmarginal.jpg" class="img-principal-mobile" alt="" height="567px" width="346px">
+            <div class="info">
+              <img class="centrar boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+              <img class="centrar2" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+            </div>
+          </div>
+          <div class="item"><img src="img/godless.jpg" class="img-principal-mobile" alt="" height="567px" width="346px">
+            <div class="info">
+              <img class="centrar boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+              <img class="centrar2" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+            </div>
+          </div>
+          <div class="item"><img src="img/dark_poster.jpg" class="img-principal-mobile" alt="" height="567px" width="346px">
+            <div class="info">
+              <img class="centrar boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+              <img class="centrar2" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+            </div>
+          </div>
+          <div class="item"><img src="img/peakyb.jpg" class="img-principal-mobile" alt="" height="567px" width="346px">
+            <div class="info">
+              <img class="centrar boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+              <img class="centrar2" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+            </div>
+          </div>
+          <div class="item"><img src="img/casa_poster.jpg" class="img-principal-mobile" alt="" height="567px" width="346px">
+            <div class="info">
+              <img class="centrar boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+              <img class="centrar2" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+            </div>
+          </div>
+      </div>
+
+
+      </div>
+
+
+
+
+  <div class="container">
+
+
+    <h2 class="titulo-carrusel">Continuar viendo</h2>
+
+    <div class="items invisible-scrollbar margen" id="1">
+      <div class="item foto1 pequeño"><img src="img/unnamed.jpg" alt="" height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto2 pequeño"><img src="img/bkbad.jpg" alt=""height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto3 pequeño"><img src="img/dark.jpg" alt="" height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto2 pequeño"><img src="img/bkbad.jpg" alt=""height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto3 pequeño"><img src="img/dark.jpg" alt="" height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto2 pequeño"><img src="img/bkbad.jpg" alt=""height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto3 pequeño"><img src="img/dark.jpg" alt="" height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item pequeño"><img src="img/57499.jpg" alt="" height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+  </div>
+
+  <div class="foto_principal  foto_info_3 centrar-foto-info">
+
+  <div class=" sombreado ubicacion  text-center">
+
+    <div class="texto-principal col align-self-center">
+      <img src="img/vikings-logo.png" class="logo-principal mobile"alt="" width="100%" >
+
+      <div class="no-mobile">
+      <img src="img/vikings-logo.png" class="logo-principal "alt="" width="100%" >
+
+    <p class="lead color_titulo espacios">Las aventuras de Ragnar Lothbrok, un vikingo agricultor, mientras asciende para convertirse en el rey de los vikingos.</p>
+  </div>
+
+    <div class="card-deck no-margen row align-items-center">
+
+      <div class=" col-4">
+          <div class=" sombreado_sin_tamaño boton-play" data-toggle="modal" data-target="#exampleModalCenter2"><i class=" tamaño-boton fa fa-play"></i></div>
+      </div>
+      <div class="col-4">
+          <div class=" sombreado_sin_tamaño "><span class="tamaño-boton fa fa-plus"></span></div>
+      </div>
+      <div class="col-2">
+        <div class="sombreado_sin_tamaño"><span class="  boton-secundario fa fa-thumbs-up like "></span></div>
+      </div>
+      <div class="col-2">
+        <div class="sombreado_sin_tamaño"><span class=" boton-secundario fa fa-thumbs-down dislike"></span></div>
+      </div>
+
+    </div>
+    <div class="no-mobile">
+
+    <p class="color_titulo texto-relleno"><span class="texto-resaltar">Protagonistas:</span> Travis Fimmel, Katheryn Winnick, Clive Standen, Jessalyn Gilsig, Gustaf Skarsgård</p>
+    <p class="color_titulo texto-relleno"><span class="texto-resaltar">Estreno:</span> 	3 de marzo de 2013</p>
+
+
+      </div>
+
+</div>
+</div>
+</div>
+
+  <h2 class="titulo-carrusel">Recomendaciones para tí..</h2>
+
+
+    <div class="items invisible-scrollbar margen" id="2">
+      <div class="item foto1 pequeño"><img src="img/rv.jpg" alt="" height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto2 pequeño"><img src="img/vikings.jpg" alt=""height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto3 pequeño"><img src="img/narcos.jpg" alt="" height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto2 pequeño"><img src="img/vikings.jpg" alt=""height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto3 pequeño"><img src="img/mindhunter.jpeg" alt="" height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto2 pequeño"><img src="img/vikings.jpg" alt=""height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item foto3 pequeño"><img src="img/narcos.jpg" alt="" height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+      <div class="item pequeño"><img src="img/bmirror.jpg" alt="" height="270px" width="350px" class="no-height">
+        <div class="info_pequeño">
+          <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+        </div>
+      </div>
+  </div>
+
+  <h2 class="titulo-carrusel">Destacados</h2>
+  <div class="items invisible-scrollbar margen" id="3">
+    <div class="item foto1 pequeño"><img src="img/cable.jpg" alt="" height="270px" width="350px" class="no-height">
+      <div class="info_pequeño">
+        <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+        <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+      </div>
+    </div>
+    <div class="item foto2 pequeño"><img src="img/57499.jpg" alt=""height="270px" width="350px" class="no-height">
+      <div class="info_pequeño">
+        <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+        <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+      </div>
+    </div>
+    <div class="item foto3 pequeño"><img src="img/dark.jpg" alt="" height="270px" width="350px" class="no-height">
+      <div class="info_pequeño">
+        <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+        <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+      </div>
+    </div>
+    <div class="item foto2 pequeño"><img src="img/simuladores.jpg" alt=""height="270px" width="350px" class="no-height">
+      <div class="info_pequeño">
+        <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+        <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+      </div>
+    </div>
+    <div class="item foto3 pequeño"><img src="img/sherlock.jpg" alt="" height="270px" width="350px" class="no-height">
+      <div class="info_pequeño">
+        <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+        <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+      </div>
+    </div>
+    <div class="item foto2 pequeño"><img src="img/thecrown.jpg" alt=""height="270px" width="350px" class="no-height">
+      <div class="info_pequeño">
+        <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+        <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+      </div>
+    </div>
+    <div class="item foto3 pequeño"><img src="img/the100.jpg" alt="" height="270px" width="350px" class="no-height">
+      <div class="info_pequeño">
+        <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+        <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+      </div>
+    </div>
+    <div class="item pequeño"><img src="img/bkbad.jpg" alt="" height="270px" width="350px" class="no-height">
+      <div class="info_pequeño">
+        <img class="centrar_pequeño boton-info" src="img/info-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter">
+        <img class="centrar2_pequeño" src="img/play-circle-regular-96.png" alt="" data-toggle="modal" data-target="#exampleModalCenter2">
+      </div>
+    </div>
+</div>
+
+
+<div class="foto_principal  foto_info_4 centrar-foto-info">
+
+<div class=" sombreado ubicacion  text-center">
+
+  <div class="texto-principal col align-self-center">
+    <img src="img/got-logo.png" class="logo-principal mobile"alt="" width="100%" >
+
+    <div class="no-mobile">
+    <img src="img/got-logo.png" class="logo-principal "alt="" width="100%" >
+
+  <p class="lead color_titulo espacios">Esta serie, basada en los libros de George R.R. Martin, muestra la competencia entre familias nobles de siete reinos de Westeros, cuya finalidad es ganar el control sobre el Trono de Hierro.</p>
+</div>
+
+  <div class="card-deck no-margen row align-items-center">
+
+    <div class=" col-4">
+        <div class=" sombreado_sin_tamaño boton-play" data-toggle="modal" data-target="#exampleModalCenter2"><i class=" tamaño-boton fa fa-play"></i></div>
+    </div>
+    <div class="col-4">
+        <div class=" sombreado_sin_tamaño "><span class="tamaño-boton fa fa-plus"></span></div>
+    </div>
+    <div class="col-2">
+      <div class="sombreado_sin_tamaño"><span class="  boton-secundario fa fa-thumbs-up like"></span></div>
+    </div>
+    <div class="col-2">
+      <div class="sombreado_sin_tamaño"><span class=" boton-secundario fa fa-thumbs-down dislike"></span></div>
+    </div>
+
+  </div>
+  <div class="no-mobile">
+
+  <p class="color_titulo texto-relleno"><span class="texto-resaltar">Protagonistas:</span> Sean Bean, Nikolaj Coster-Waldau, Peter Dinklage, Emilia Clarke, Lena Headey, Iain Glen</p>
+  <p class="color_titulo texto-relleno"><span class="texto-resaltar">Estreno:</span> 	17 de abril de 2011</p>
+
+
+    </div>
+
+</div>
+</div>
+</div>
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered centrar-modal" role="document">
+    <div class="modal-content notificacion-modal">
+
+      <div class="modal-header centrar-modal">
+   <h5 class="modal-title titulo-modal" >¡Upss! Ocurrio un error</h5>
+   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     <span aria-hidden="true">&times;</span>
+   </button>
+ </div>
+ <div class="modal-body">
+   <p class="descripcion-modal">Hubo un problema al reproducir el video, pero no te preocupes </p>
+   <p class="descripcion-modal">puedes jugar mientras esperas que lo arreglemos</p>
+ </div>
+ <div class="modal-footer">
+   <button type="button" class="btn btn-secondary boton-modal" data-dismiss="modal">Cerrar</button>
+   <a href="juego.html"><button type="button" class="btn btn-primary boton-modal">¡Comenzar a jugar!</button></a>
+ </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+          <div class="carousel-inner">
+
+              <div class="foto_principal  foto_portada_2">
+
+              <div class=" sombreado ubicacion  text-center">
+
+                <div class="texto-principal col align-self-center">
+                  <img src="img/spider-man-logo.png" class="logo-principal mobile"alt="" width="100%" >
+
+                  <div class="no-mobile">
+                  <img src="img/spider-man-logo.png" class="logo-principal "alt="" width="100%" >
+
+                <p class="lead color_titulo espacios">Peter debe volver a ponerse el traje de Spider-Man cuando Nick Fury le encomienda una nueva misión: frenar el ataque de unas criaturas que están causando el caos en el continente.</p>
+
+                <div class="card-deck no-margen row align-items-center">
+
+                  <div class=" col-4">
+                      <div class=" sombreado_sin_tamaño boton-play" data-toggle="modal" data-target="#exampleModalCenter2"><i class=" tamaño-boton fa fa-play"></i></div>
+                  </div>
+                  <div class="col-4">
+                      <div class=" sombreado_sin_tamaño "><span class="tamaño-boton fa fa-plus"></span></div>
+                  </div>
+                  <div class="col-2">
+                    <div class="sombreado_sin_tamaño"><span class="  boton-secundario fa fa-thumbs-up like"></span></div>
+                  </div>
+                  <div class="col-2">
+                    <div class="sombreado_sin_tamaño"><span class=" boton-secundario fa fa-thumbs-down dislike"></span></div>
+                  </div>
+
+                </div>
+                <p class="color_titulo texto-relleno"><span class="texto-resaltar">Protagonistas:</span> Tom Holland, Samuel L. Jackson, Zendaya, Cobie Smulders, Jon Favreau</p>
+                <p class="color_titulo texto-relleno"><span class="texto-resaltar">Estreno:</span> 2 de julio de 2019</p>
+
+
+                  </div>
+
+          </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
+  <div class="espacio-top">
+
+  </div>
+  <nav class="navbar navbar-expand-md navbar-dark  bg-dark fixed-bot mobile ">
+
+    <form class="form-inline mt-2 mt-md-0 barra-mobile">
+
+
+      <div class="dropdown-menu notificacion-mobile" aria-labelledby="dropdownMenuLink">
+
+                  <div class="row align-items-center contorno efecto-seleccion ">
+                      <img class="  col-7 img-notificacion-mobile"  src="img/dark-notificacion.jpg" alt="" width="200px">
+                      <div class="  col-5 no-padding  ">
+                        <p class="titulo-notificacion-mobile">Dark</p>
+                        <p class="descripcion-notificacion-mobile ">Ya disponible</p>
+                        <p class="descripcion-notificacion-mobile ">Temporada 3</p>
+                      </div>
+                  </div>
+                  <div class="row align-items-center contorno efecto-seleccion">
+                      <img class="  col-7 img-notificacion-mobile"  src="img/atypical-notificacion.jpg" alt=""  max-width = "200px" >
+                      <div class="  col-5 no-padding  ">
+                        <p class="titulo-notificacion-mobile">Atypical</p>
+                        <p class="descripcion-notificacion-mobile ">Ya disponible</p>
+                        <p class="descripcion-notificacion-mobile ">Nuevos Episodios</p>
+                      </div>
+                  </div>
+                  <div class="row align-items-center contorno efecto-seleccion">
+                      <img class="  col-7 img-notificacion-mobile"  src="img/ozark-notificacion.jpg" alt="" max-width = "200px">
+                      <div class="  col-5 no-padding  ">
+                        <p class="titulo-notificacion-mobile">Ozark</p>
+                        <p class="descripcion-notificacion-mobile ">Ya disponible</p>
+                        <p class="descripcion-notificacion-mobile ">Temporada 2</p>
+                      </div>
+                </div>
+
+              </div>
+
+
+
+
+
+      <a href="perfil.html" c><img class="foto_perfil_mobile espacio " src="img/foto_perfil.jpg" alt=""></a>
+  <i class="espacio fa fa-bell boton-navbar efecto-seleccion boton-seleccion" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+      <div class=""><a href="login.html"<i class=" boton-navbar espacio fa fa-sign-out"></i></a></div>
+    </form>
+  </nav>
+
+  <script src="js/main.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js" charset="utf-8"></script>
+</html>
